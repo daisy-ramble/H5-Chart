@@ -22,8 +22,8 @@ var H5_loading = function(images, firstPage) {
 
     } else {
         this._loaded++;
-        $('#rate').text(((this._loaded / this._image * 100) >> 0) + '%')
-        
+        $('#rate').text(((this._loaded / this._images * 100) >> 0) + '%');
+        debugger
         if (this._loaded < this._images) {
             return this;
         }
